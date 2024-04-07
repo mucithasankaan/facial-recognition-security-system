@@ -35,4 +35,4 @@ This code uses the basic facial recognition system from face_recognition_core.py
 ### data_generation_system:
 This code takes a large number of photos every second in a designated folder after the code is executed. It saves each photo with a name combining the name entered on the console and the photo number. These photos can later be used to train the artificial intelligence.
 
-### To better understand how to use and operate these codes, you can read the User Guide.py file.
+#### To better understand how to use and operate these codes, you can read the User Guide.py file.
