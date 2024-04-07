@@ -10,15 +10,15 @@
 
 ## Installation Instructions:
 
-1: To download the face_recognition library, enter these commands in the command window one by one:
+#### 1: To download the face_recognition library, enter these commands in the command window one by one:
 
-pip install cmake
-git clone https://github.com/davisking/dlib.git
-cd dlib
-python setup.py install
-pip install face_recognition
+1: pip install cmake <br>
+2: git clone https://github.com/davisking/dlib.git <br>
+3: cd dlib <br>
+4: python setup.py install <br>
+5: pip install face_recognition
 
-2: To download cv2, write this command:
+#### 2: To download cv2, write this command:
 
 pip install opencv-python
 
