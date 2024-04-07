@@ -4,14 +4,13 @@
 #### This project is a simple example of a facial recognition system that scans the face of the person in front of the computer every second and prevents anyone other than the owner of the computer from using it. This system is basic and highly open to development.
 
 ## Prerequisites:
-Python 3.x
-Compatible with Windows, MacOS, Linux
-Webcam
+1: Python 3.x <br>
+2: Compatible with Windows, MacOS, Linux <br>
+3: Webcam
 
 ## Installation Instructions:
 
-1:
-To download the face_recognition library, enter these commands in the command window one by one:
+1: To download the face_recognition library, enter these commands in the command window one by one:
 
 pip install cmake
 git clone https://github.com/davisking/dlib.git
@@ -19,8 +18,7 @@ cd dlib
 python setup.py install
 pip install face_recognition
 
-2:
-To download cv2, write this command:
+2: To download cv2, write this command:
 
 pip install opencv-python
 
