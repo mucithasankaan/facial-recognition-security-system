@@ -12,6 +12,10 @@ using a face recognition system.
 # name of authorized person
 host = ""
 
+# sensitivity values
+FTFC = 100 #This variable determines how many frames the artificial intelligence cannot detect face before triggering the lock system.
+UFFC = 5 #This variable determines how many frames unauthorized faces must be detected before the lock system is activated.
+
 # Create a mouse controller instance
 m = Controller()
 # Initialize the lock state and counters
@@ -21,6 +25,7 @@ counter_j = 0
 # Initial position of the mouse
 position = (0, 0)
 
+# Location of the photo data to be used for training artificial intelligence
 images_path = "images"
 
 
@@ -43,6 +48,11 @@ sfr.load_encoding_images(images_path)
 # Save model (assuming 'model.pkl')
 sfr.save_model("model.pkl")
 
+"""
+code to Load model
+sfr.load_model("model.pkl")
+"""
+
 # Start the camera
 cap = cv2.VideoCapture(0)
 
@@ -61,8 +71,8 @@ while True:
         else:
             # If a different face is detected, initiate the locking process
             counter_i += 1
-            if counter_i > 5:
-                if counter_i == 6:
+            if counter_i > UFFC:
+                if counter_i == UFFC+1:
                     position = m.position
                     lock_state = True
                 else:
@@ -72,8 +82,8 @@ while True:
     if len(face_names) == 0:
         print("No face detected")
         counter_j += 1
-        if counter_j > 100:
-            if counter_j == 101:
+        if counter_j > FTFC:
+            if counter_j == FTFC+1:
                 position = m.position
                 lock_state = True
             else:
