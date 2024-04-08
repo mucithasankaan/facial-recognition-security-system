@@ -30,7 +30,7 @@ This code contains the fundamentals of a facial recognition system that works wi
 ### sample_security_system.py:
 This code uses the basic facial recognition system from face_recognition_core.py to scan the face of the person in front of the computer every second. If the name returned by the face_recognition_core.py code does not contain the predefined host variable, or if no face is detected for a period, it locks the mouse. This is a sample code.
 
-### data_generation_system:
+### data_generation_system.py:
 This code takes a large number of photos every second in a designated folder after the code is executed. It saves each photo with a name combining the name entered on the console and the photo number. These photos can later be used to train the artificial intelligence.
 
 #### To better understand how to use and operate these codes, you can read the User Guide.py file.
