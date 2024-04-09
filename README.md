@@ -37,4 +37,4 @@ This code takes a large number of photos every second in a designated folder aft
 
 ## Contact
 mucithasankaan@gmail.com <br>
-instagram.com/mucithasankaan
+https://instagram.com/mucithasankaan
