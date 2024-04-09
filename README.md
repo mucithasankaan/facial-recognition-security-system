@@ -36,5 +36,5 @@ This code takes a large number of photos every second in a designated folder aft
 #### To better understand how to use and operate these codes, you can read the User Guide.py file.
 
 ## Contact
-mucithasankaan@gmail.com 
+mucithasankaan@gmail.com <br>
 Instagram.com/mucithasankaan
